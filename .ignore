@@ -3,6 +3,6 @@ target/*
 
 #IDEA
 *.iml
-.idea/
+.idea/*
 
 

@@ -37,21 +37,21 @@ Flink
     3. 启动一个webui 方便监控和展示作业流程（yarn中没有Dispacher，故没有webui）
  ## 任务提交流程
  ### standalone
- ![standalone模式](.\src\main\resources\picture\任务执行流程图-standalone.PNG)
+ ![standalone模式](https://github.com/Aliang-Swordsman/flinkTutorial/blob/master/src/main/resources/picture/%E4%BB%BB%E5%8A%A1%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%9B%BE-standalone.PNG?raw=true)
  ### yarn
- ![yarn模式](.\src\main\resources\picture\任务执行流程图-yarn.PNG)
+ ![yarn模式](https://github.com/Aliang-Swordsman/flinkTutorial/blob/master/src/main/resources/picture/%E4%BB%BB%E5%8A%A1%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%9B%BE-yarn.PNG?raw=true)
    
  ## 任务调度原理
- ![任务调度](.\src\main\resources\picture\任务调度.PNG)
+ ![任务调度](https://github.com/Aliang-Swordsman/flinkTutorial/blob/master/src/main/resources/picture/%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6.PNG?raw=true)
 
  ### TaskManger和slot
- ![TaskManger](.\src\main\resources\picture\TaskMangerAndSlots.PNG)  ![TaskManger](.\src\main\resources\picture\TaskMangerAndSlots2.PNG)
+ ![TaskManger](https://github.com/Aliang-Swordsman/flinkTutorial/blob/master/src/main/resources/picture/TaskMangerAndSlots.PNG?raw=true)  ![TaskManger](https://github.com/Aliang-Swordsman/flinkTutorial/blob/master/src/main/resources/picture/TaskMangerAndSlots2.PNG?raw=true)
   1. 每一个TEaskManger都是一个jvm进程
   2. 一个TaskManger有一个或多个slot
   3. 默认情况下Flink 允许子任务共享slot，即使是不同任务的子任务
   4. Task slot 是静态概念，是指TaskManger具有的并发能力
   example:
-      ![TaskManger_example](.\src\main\resources\picture\TaskMangerAndSlotsExample1.PNG)  ![TaskManger](.\src\main\resources\picture\TaskMangerAndSlotsExample2.PNG)
+      ![TaskManger_example](https://github.com/Aliang-Swordsman/flinkTutorial/blob/master/src/main/resources/picture/TaskMangerAndSlotsExample1.PNG?raw=true)  ![TaskManger](https://github.com/Aliang-Swordsman/flinkTutorial/blob/master/src/main/resources/picture/TaskMangerAndSlotsExample2.PNG?raw=true)
       1. 共有3个TaskManger 每个TaskManger3个slot, 共有9个slots
       2. 第一种情况,一个并行度，导致很多slots空闲
       3. 第二种情况，2个并行度，会分配到两个slots上面
@@ -70,9 +70,9 @@ Flink
    3. JobGraph：streamGraph经过优化后生成的JobGraph，提交给jobManger的数据结构，将多个符合条件的节点chain合并成一个节点
    4. ExecutionGraph：JobManger根据JobGraph生成的ExecutionGraph,ExecutionGraph是JobGraph的并行化版本，是调度层最核心的数据结构
    5. 物理执行图：JobManger根据ExecutionGraph对job进行调度后， 在各个TaskManger上部署Task后形成的图，并不是一个具体的数据结构
-   ![graph](.\src\main\resources\picture\StreamGraph-JobGraph.PNG) 
-   ![graph](.\src\main\resources\picture\ExecutionGraph.PNG)
-   ![graph](.\src\main\resources\picture\物理执行图.PNG)
+   ![graph](https://github.com/Aliang-Swordsman/flinkTutorial/blob/master/src/main/resources/picture/StreamGraph-JobGraph.PNG?raw=true) 
+   ![graph](https://github.com/Aliang-Swordsman/flinkTutorial/blob/master/src/main/resources/picture/ExecutionGraph.PNG?raw=true)
+   ![graph](https://github.com/Aliang-Swordsman/flinkTutorial/blob/master/src/main/resources/picture/%E7%89%A9%E7%90%86%E6%89%A7%E8%A1%8C%E5%9B%BE.PNG?raw=true)
    
  ### 并行度
    1. 特定算子的子任务（subTask）的个数称之为并行度
@@ -85,14 +85,14 @@ Flink
         2. Redistributing： stream的分区会发生改变，每一个算子的子任务依据所选择的trasformation发送数据到不同的目标任务。
         例如： keyby 根据hashcode重分区，而broadcast和rebalance会随机重新分区，这些算子都会引起Redistributie过程
         而redistribute类似于spark的shuffle过程
-   ![graph](.\src\main\resources\picture\parallelism.PNG) 
+   ![graph](https://github.com/Aliang-Swordsman/flinkTutorial/blob/master/src/main/resources/picture/parallelism.PNG?raw=true) 
     
  ### 任务链
    1. flink采用一种任务链的优化技术，可以在特定条件下减少本地通信开销，为了满足任务链的要求，必须将两个算子或多个算子，设置为相同的并行度
    并通过本地转发（local forward）的方式链接
    2. 相同并行度的one-to-one操作，flink将这样相连的算子链接在一个task，原来的算子成为其中的subtask
    3. 并行度相同 one-to-one操作，二者缺一不可
-   ![graph](.\src\main\resources\picture\OperatorChains.PNG) 
+   ![graph](https://github.com/Aliang-Swordsman/flinkTutorial/blob/master/src/main/resources/picture/OperatorChains.PNG?raw=true) 
    4. 但是针对比较大的task ，如果还要合并在一起会更加影响性能，故可以不选择合并
         1. env.disableOperatorChaining() 
         2. 每个算子后面可以跟加 .disableChaining()

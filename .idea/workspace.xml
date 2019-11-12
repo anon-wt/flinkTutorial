@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6884ff80-be6d-4b73-8a5e-6c0a7081f870" name="Default Changelist" comment="">
+    <list default="true" id="6884ff80-be6d-4b73-8a5e-6c0a7081f870" name="Default Changelist" comment="source">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sensorRead" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/study/api/source/SimpleSourceTests.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +55,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StreamWordCount">
+  <component name="RunManager" selected="Application.SimpleSourceTests">
+    <configuration name="SimpleSourceTests" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.api.source.SimpleSourceTests" />
+      <module name="flinkTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.api.source.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StreamWordCount" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.study.wc.StreamWordCount" />
       <module name="flinkTutorial" />
@@ -81,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimpleSourceTests" />
         <item itemvalue="Application.StreamWordCount" />
         <item itemvalue="Application.WordCount" />
       </list>
@@ -102,7 +119,7 @@
       <workItem from="1573218372225" duration="2105000" />
       <workItem from="1573266222301" duration="6112000" />
       <workItem from="1573376580905" duration="8157000" />
-      <workItem from="1573530927917" duration="11171000" />
+      <workItem from="1573530927917" duration="13408000" />
     </task>
     <task id="LOCAL-00001" summary="基础介绍">
       <created>1573552648232</created>
@@ -125,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573555375303</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="图片链接 md">
+      <created>1573559555319</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573559555319</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +169,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="基础介绍" />
-    <option name="LAST_COMMIT_MESSAGE" value="基础介绍" />
+    <MESSAGE value="图片链接 md" />
+    <option name="LAST_COMMIT_MESSAGE" value="图片链接 md" />
   </component>
 </project>

@@ -1,11 +1,11 @@
 Flink
 
-#快速入门
+# 快速入门
 1. wordcount
 2. streamwordcount
 
-#集群搭建
-##standard模式
+# 集群搭建
+## standard模式
   1. 官网下载软件包
   2. bin/start-cluster.sh 启动
         1. TaskManagerRunner
@@ -16,7 +16,7 @@ Flink
   5. bin/stop-cluster.sh 关闭
  
  
- #运行架构
+ # 运行架构
  ## 运行组件
  1. JobManger
     1. 控制程序运行的主进程，每个程序都有一个不同的jobManger

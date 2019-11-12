@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6884ff80-be6d-4b73-8a5e-6c0a7081f870" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/picture/ExecutionGraph.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/picture/OperatorChains.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/picture/StreamGraph-JobGraph.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/picture/TaskMangerAndSlots.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/picture/TaskMangerAndSlots2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/picture/TaskMangerAndSlotsExample1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/picture/TaskMangerAndSlotsExample2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/picture/parallelism.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/picture/物理执行图.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/study/wc/StreamWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/study/wc/StreamWordCount.scala" afterDir="false" />
-    </list>
+    <list default="true" id="6884ff80-be6d-4b73-8a5e-6c0a7081f870" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,8 +96,16 @@
       <workItem from="1573218372225" duration="2105000" />
       <workItem from="1573266222301" duration="6112000" />
       <workItem from="1573376580905" duration="8157000" />
-      <workItem from="1573530927917" duration="8393000" />
+      <workItem from="1573530927917" duration="8649000" />
     </task>
+    <task id="LOCAL-00001" summary="基础介绍">
+      <created>1573552648232</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573552648232</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,5 +124,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="基础介绍" />
+    <option name="LAST_COMMIT_MESSAGE" value="基础介绍" />
   </component>
 </project>

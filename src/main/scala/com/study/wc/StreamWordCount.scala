@@ -8,7 +8,7 @@ object StreamWordCount {
   def main(args: Array[String]): Unit = {
     // stream 环境
     val env = StreamExecutionEnvironment.getExecutionEnvironment
-//    env.disableOperatorChaining() 针对比较的的task ，可以选择不进行操作链合并
+//    env.disableOperatorChaining()  // 针对比较的的task ，可以选择不进行操作链合并
     // 传入参数
     val paramTool: ParameterTool = ParameterTool.fromArgs(args)
 
@@ -23,7 +23,7 @@ object StreamWordCount {
     // 数据流处理
     val wordCount = streamData.flatMap(_.split(" "))
       .filter(_.nonEmpty)
-//      .disableChaining() 针对算子不使用chain合并操作
+      .disableChaining() // 针对算子不使用chain合并操作
 //      .startNewChain() 强行断开形成一个新链
       .map((_, 1))
       .keyBy(0)  // 流式没有group by 只有keyby 代替 nc -lk 7777

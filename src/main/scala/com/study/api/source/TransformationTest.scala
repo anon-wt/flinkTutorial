@@ -1,6 +1,7 @@
 package com.study.api.source
 
 import org.apache.flink.api.common.functions.{FilterFunction, RichMapFunction}
+import org.apache.flink.api.java.tuple.Tuple
 import org.apache.flink.configuration.Configuration
 import org.apache.flink.streaming.api.scala._
 
@@ -20,12 +21,12 @@ object TransformTest {
         val dataArray = data.split(",")
         SensorReading(dataArray(0).trim, dataArray(1).trim.toLong, dataArray(2).trim.toDouble)
       })
-    val aggStream = dataStream
+    val aggStream: KeyedStream[SensorReading, Tuple] = dataStream
       .keyBy("id")
       //        .timeWindow(Time.seconds(10))
       //      .max("temperature")
       //      .reduce((x, y) => SensorReading(x.id, x.timestamp + 1, y.temperature + 10))
-      .min("temperature")
+//      .min("temperature")
 
     // 2. 分流算子测试
 

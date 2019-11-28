@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6884ff80-be6d-4b73-8a5e-6c0a7081f870" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/study/api/source/SimpleSourceTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/study/api/source/TransformationTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/study/api/source/SimpleSourceTests.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/study/wc/StreamWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/study/wc/StreamWordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/study/api/source/TransformationTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/study/api/source/TransformationTest.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +120,7 @@
       <workItem from="1573530927917" duration="13777000" />
       <workItem from="1573639638702" duration="6815000" />
       <workItem from="1573978960639" duration="206000" />
-      <workItem from="1574855019493" duration="2228000" />
+      <workItem from="1574855019493" duration="4074000" />
     </task>
     <task id="LOCAL-00001" summary="基础介绍">
       <created>1573552648232</created>
@@ -159,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573563822639</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="转换算子-1">
+      <created>1574860469219</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574860469219</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +188,7 @@
     <MESSAGE value="基础介绍" />
     <MESSAGE value="图片链接 md" />
     <MESSAGE value="source" />
-    <option name="LAST_COMMIT_MESSAGE" value="source" />
+    <MESSAGE value="转换算子-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="转换算子-1" />
   </component>
 </project>

@@ -144,4 +144,15 @@ Flink
       
        
 
-      
+# API
+## 基础api
+map flat filter 
+keyby .keyBy("id") .keyBy(0) 返回的是JAVATUPLE .keyBy(_._1) 返回的是对应的类型
+agg 绝大多多数聚合操作是针对keyStream
+
+## 分流算子
+split 将一个stream 分成两部分 select： 根据名称选择类型
+connect 优点： 可以对不同的流做不同的操作  缺点： 每次只能操作两个流
+union 优点： 可以对多个流进行合并  缺点: 多条流类型必须相同 
+
+ 

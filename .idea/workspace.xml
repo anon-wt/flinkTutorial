@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6884ff80-be6d-4b73-8a5e-6c0a7081f870" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/job/StreamingJobIntegrationTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateful/MyStringKeySelector.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateful/MystatefulFlatMap.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateful/MystatefulFlatMap2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateful/StatefulFlatMapTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateful/TestStateful.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateless/IncrementMapFunction.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateless/IncrementMapFunctionTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateless/MystatelessFlatMap.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateless/MystatelessMap.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateless/TestStateLess.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/timed/MyProcessFunction.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/timed/TestTimed.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/study/api/source/TransformationTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/study/api/source/TransformationTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +27,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,12 +51,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/picture" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="com.study" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.unit.stateful" />
+      <recent name="com.study.unit.stateless" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\study\flinkTutorial\src\main\resources\picture" />
     </key>
@@ -53,51 +82,119 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SimpleSourceTests">
-    <configuration name="SimpleSourceTests" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.api.source.SimpleSourceTests" />
+  <component name="RunManager" selected="ScalaTest.StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state (2)">
+    <configuration name="StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state (1)" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="flinkTutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.api.source.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.study.unit.stateful.StatefulFlatMapTest" />
+      <option name="testName" value="StatefulFlatMap should do some fancy stuff with timers and state" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="D:\project\study\flinkTutorial" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamWordCount" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.wc.StreamWordCount" />
+    <configuration name="StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state (2)" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="flinkTutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.wc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.study.unit.stateful.StatefulFlatMapTest" />
+      <option name="testName" value="StatefulFlatMap should do some fancy stuff with timers and state" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="D:\project\study\flinkTutorial" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.wc.WordCount" />
+    <configuration name="StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="flinkTutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.wc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.study.unit.stateful.StatefulFlatMapTest" />
+      <option name="testName" value="StatefulFlatMap should do some fancy stuff with timers and state" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="D:\project\study\flinkTutorial" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamingJobIntegrationTest.IncrementFlatMapFunction pipeline should incrementValues (1)" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="flinkTutorial" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.study.unit.job.StreamingJobIntegrationTest" />
+      <option name="testName" value="IncrementFlatMapFunction pipeline should incrementValues" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="D:\project\study\flinkTutorial" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamingJobIntegrationTest.IncrementFlatMapFunction pipeline should incrementValues" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="flinkTutorial" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.study.unit.job.StreamingJobIntegrationTest" />
+      <option name="testName" value="IncrementFlatMapFunction pipeline should incrementValues" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="D:\project\study\flinkTutorial" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SimpleSourceTests" />
-        <item itemvalue="Application.StreamWordCount" />
-        <item itemvalue="Application.WordCount" />
+        <item itemvalue="ScalaTest.StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state (2)" />
+        <item itemvalue="ScalaTest.StreamingJobIntegrationTest.IncrementFlatMapFunction pipeline should incrementValues (1)" />
+        <item itemvalue="ScalaTest.StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state (1)" />
+        <item itemvalue="ScalaTest.StreamingJobIntegrationTest.IncrementFlatMapFunction pipeline should incrementValues" />
+        <item itemvalue="ScalaTest.StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state" />
       </list>
     </recent_temporary>
   </component>
@@ -121,6 +218,9 @@
       <workItem from="1573639638702" duration="6815000" />
       <workItem from="1573978960639" duration="206000" />
       <workItem from="1574855019493" duration="4074000" />
+      <workItem from="1575540595171" duration="5000" />
+      <workItem from="1582033097842" duration="15670000" />
+      <workItem from="1582165660074" duration="15075000" />
     </task>
     <task id="LOCAL-00001" summary="基础介绍">
       <created>1573552648232</created>

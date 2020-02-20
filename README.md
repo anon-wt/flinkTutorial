@@ -155,4 +155,53 @@ split 将一个stream 分成两部分 select： 根据名称选择类型
 connect 优点： 可以对不同的流做不同的操作  缺点： 每次只能操作两个流
 union 优点： 可以对多个流进行合并  缺点: 多条流类型必须相同 
 
- 
+
+# 单元测试
+## maven 依赖
+```
+<dependency>
+  <groupId>org.apache.flink</groupId>
+  <artifactId>flink-test-utils_2.11</artifactId>
+  <version>1.9.0</version>
+  <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>org.apache.flink</groupId>
+  <artifactId>flink-runtime_2.11</artifactId>
+  <version>1.9.0</version>
+  <scope>test</scope>
+  <classifier>tests</classifier>
+</dependency>
+<dependency>
+  <groupId>org.apache.flink</groupId>
+  <artifactId>flink-streaming-scala_2.11</artifactId>
+  <version>1.9.0</version>
+  <scope>test</scope>
+  <classifier>tests</classifier>
+</dependency>
+```
+## 单元测试
+1. Stateless Operators
+    1. FlatMap:
+        1. Mock the Collector object using Mockito
+        2. Use the ListCollector provided by Flink
+2. Stateful Operators
+    1. OneInputStreamOperatorTestHarness (for operators on DataStreamss)
+    2. KeyedOneInputStreamOperatorTestHarness (for operators on KeyedStreams)
+    3. TwoInputStreamOperatorTestHarness (for operators of ConnectedStreams of two DataStreams)
+    4. KeyedTwoInputStreamOperatorTestHarness (for operators on ConnectedStreams of two KeyedStreams)
+3. Timed Process Operators
+    1. Many more examples for the usage of these test harnesses can be found in the Flink code base, e.g.:
+        1. org.apache.flink.streaming.runtime.operators.windowing.WindowOperatorTest is a good example for testing operators and user-defined functions, which depend on processing or event time.
+        2. org.apache.flink.streaming.api.functions.sink.filesystem.LocalStreamingFileSinkTest shows how to test a custom sink with the AbstractStreamOperatorTestHarness. Specifically, it uses AbstractStreamOperatorTestHarness.snapshot and AbstractStreamOperatorTestHarness.initializeState to tests its interaction with Flink’s checkpointing mechanism.
+4. Job
+    1. A few remarks on integration testing with MiniClusterWithClientResource:
+        1. In order not to copy your whole pipeline code from production to test, make sources and sinks pluggable in your production code and inject special test sources and test sinks in your tests.
+        2. The static variable in CollectSink is used here because Flink serializes all operators before distributing them across a cluster. Communicating with operators instantiated by a local Flink mini cluster via static variables is one way around this issue. Alternatively, you could write the data to files in a temporary directory with your test sink.
+        3. You can implement a custom parallel source function for emitting watermarks if your job uses event timer timers.
+        4. It is recommended to always test your pipelines locally with a parallelism > 1 to identify bugs which only surface for the pipelines executed in parallel.
+        5. Prefer @ClassRule over @Rule so that multiple tests can share the same Flink cluster. Doing so saves a significant amount of time since the startup and shutdown of Flink clusters usually dominate the execution time of the actual tests.
+        6.If your pipeline contains custom state handling, you can test its correctness by enabling checkpointing and restarting the job within the mini cluster. For this, you need to trigger a failure by throwing an exception from (a test-only) user-defined function in your pipeline.
+5. 参考：
+    1. https://ci.apache.org/projects/flink/flink-docs-release-1.9/dev/stream/testing.html
+    2. https://mp.weixin.qq.com/s/neloF1x75pkwdGjGCki9sw

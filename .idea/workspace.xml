@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6884ff80-be6d-4b73-8a5e-6c0a7081f870" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/job/StreamingJobIntegrationTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateful/MyStringKeySelector.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateful/MystatefulFlatMap.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateful/MystatefulFlatMap2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateful/StatefulFlatMapTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateful/TestStateful.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateless/IncrementMapFunction.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateless/IncrementMapFunctionTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateless/MystatelessFlatMap.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateless/MystatelessMap.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/stateless/TestStateLess.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/timed/MyProcessFunction.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/study/unit/timed/TestTimed.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -220,7 +205,7 @@
       <workItem from="1574855019493" duration="4074000" />
       <workItem from="1575540595171" duration="5000" />
       <workItem from="1582033097842" duration="15670000" />
-      <workItem from="1582165660074" duration="15075000" />
+      <workItem from="1582165660074" duration="15842000" />
     </task>
     <task id="LOCAL-00001" summary="基础介绍">
       <created>1573552648232</created>
@@ -264,7 +249,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574860469219</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="单元测试">
+      <created>1582190846840</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582190846840</updated>
+    </task>
+    <task id="LOCAL-00008" summary="gitignore">
+      <created>1582190969888</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582190969888</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +288,8 @@
     <MESSAGE value="图片链接 md" />
     <MESSAGE value="source" />
     <MESSAGE value="转换算子-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="转换算子-1" />
+    <MESSAGE value="单元测试" />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
 </project>

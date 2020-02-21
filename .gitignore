@@ -1,9 +1,8 @@
-#MAVEN
-target/*
+# Maven #
+target/
 
-#IDEA
+# IDEA #
+.idea/
 *.iml
-*.xml
-.idea/*
 
 

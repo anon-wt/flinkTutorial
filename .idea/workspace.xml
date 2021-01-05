@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6884ff80-be6d-4b73-8a5e-6c0a7081f870" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/study/job/spendreport/FraudDetectionJob.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/study/job/spendreport/FraudDetector.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/study/job/spendreport/FraudDetectorV2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/study/job/spendreport/FraudDetectorV3.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/study/api/source/SimpleSourceTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/study/api/source/SimpleSourceTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/study/api/source/TransformationTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/study/api/source/TransformationTest.scala" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,12 +38,18 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/picture" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -43,31 +57,51 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\study\flinkTutorial\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="com.study" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.job.spendreport" />
       <recent name="com.study.unit.stateful" />
       <recent name="com.study.unit.stateless" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\study\flinkTutorial\src\main\resources" />
+      <recent name="D:\project\study\flinkTutorial\src\main\scala\com\study\job\fraud" />
       <recent name="D:\project\study\flinkTutorial\src\main\resources\picture" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="ScalaTest.StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state (2)">
+  <component name="RunManager" selected="Application.FraudDetectionJob">
+    <configuration name="FraudDetectionJob" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.job.spendreport.FraudDetectionJob" />
+      <module name="flinkTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.job.spendreport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleSourceTests" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.api.source.SimpleSourceTests" />
+      <module name="flinkTutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.api.source.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state (1)" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="flinkTutorial" />
       <option name="allowRunningInParallel" value="false" />
@@ -81,7 +115,6 @@
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.study.unit.stateful.StatefulFlatMapTest" />
-      <option name="testName" value="StatefulFlatMap should do some fancy stuff with timers and state" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="D:\project\study\flinkTutorial" />
@@ -102,28 +135,6 @@
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.study.unit.stateful.StatefulFlatMapTest" />
-      <option name="testName" value="StatefulFlatMap should do some fancy stuff with timers and state" />
-      <option name="useSbt" value="false" />
-      <option name="useUiWithSbt" value="false" />
-      <option name="workingDirectory" value="D:\project\study\flinkTutorial" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="flinkTutorial" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="testKind" value="Class" />
-      <option name="envs">
-        <map />
-      </option>
-      <option name="javaOptions" value="" />
-      <option name="jrePath" />
-      <option name="searchTest" value="Across module dependencies" />
-      <option name="showProgressMessages" value="true" />
-      <option name="testArgs" value="" />
-      <option name="testClassPath" value="com.study.unit.stateful.StatefulFlatMapTest" />
-      <option name="testName" value="StatefulFlatMap should do some fancy stuff with timers and state" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="D:\project\study\flinkTutorial" />
@@ -144,28 +155,6 @@
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.study.unit.job.StreamingJobIntegrationTest" />
-      <option name="testName" value="IncrementFlatMapFunction pipeline should incrementValues" />
-      <option name="useSbt" value="false" />
-      <option name="useUiWithSbt" value="false" />
-      <option name="workingDirectory" value="D:\project\study\flinkTutorial" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StreamingJobIntegrationTest.IncrementFlatMapFunction pipeline should incrementValues" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="flinkTutorial" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="testKind" value="Class" />
-      <option name="envs">
-        <map />
-      </option>
-      <option name="javaOptions" value="" />
-      <option name="jrePath" />
-      <option name="searchTest" value="Across module dependencies" />
-      <option name="showProgressMessages" value="true" />
-      <option name="testArgs" value="" />
-      <option name="testClassPath" value="com.study.unit.job.StreamingJobIntegrationTest" />
-      <option name="testName" value="IncrementFlatMapFunction pipeline should incrementValues" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="D:\project\study\flinkTutorial" />
@@ -175,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FraudDetectionJob" />
+        <item itemvalue="Application.SimpleSourceTests" />
         <item itemvalue="ScalaTest.StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state (2)" />
         <item itemvalue="ScalaTest.StreamingJobIntegrationTest.IncrementFlatMapFunction pipeline should incrementValues (1)" />
         <item itemvalue="ScalaTest.StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state (1)" />
-        <item itemvalue="ScalaTest.StreamingJobIntegrationTest.IncrementFlatMapFunction pipeline should incrementValues" />
-        <item itemvalue="ScalaTest.StatefulFlatMapTest.StatefulFlatMap should do some fancy stuff with timers and state" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +195,8 @@
       <workItem from="1575540595171" duration="5000" />
       <workItem from="1582033097842" duration="15670000" />
       <workItem from="1582165660074" duration="15842000" />
+      <workItem from="1609729606897" duration="1332000" />
+      <workItem from="1609755010694" duration="10825000" />
     </task>
     <task id="LOCAL-00001" summary="基础介绍">
       <created>1573552648232</created>
@@ -291,5 +282,35 @@
     <MESSAGE value="单元测试" />
     <MESSAGE value="gitignore" />
     <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1609831438548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609831438548" />
+    <state x="765" y="218" key="#com.intellij.ide.util.MemberChooser" timestamp="1609831103321">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609831103321" />
+    <state width="1877" height="19" key="GridCell.Tab.0.bottom" timestamp="1609834914262">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="19" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609834914262" />
+    <state width="1877" height="19" key="GridCell.Tab.0.center" timestamp="1609834914262">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="19" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609834914262" />
+    <state width="1877" height="19" key="GridCell.Tab.0.left" timestamp="1609834914262">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="19" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609834914262" />
+    <state width="1877" height="19" key="GridCell.Tab.0.right" timestamp="1609834914262">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="19" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609834914262" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609831934421">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609831934421" />
   </component>
 </project>
